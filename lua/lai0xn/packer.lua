@@ -11,6 +11,7 @@ return require('packer').startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+  use { 'sbdchd/neoformat'}
   use {
   'L3MON4D3/LuaSnip',
   requires = 'rafamadriz/friendly-snippets', -- Optional: pre-defined snippets
@@ -19,6 +20,15 @@ return require('packer').startup(function(use)
   use {
     "williamboman/mason.nvim"
   }
+  use {
+    'nvim-flutter/flutter-tools.nvim',
+    requires = {
+        'nvim-lua/plenary.nvim',
+        'stevearc/dressing.nvim', -- optional for vim.ui.select
+    },
+}
+  use {"sho-87/kanagawa-paper.nvim"}
+  use {'andweeb/presence.nvim'}
   use({'neovim/nvim-lspconfig'})
   use({'hrsh7th/nvim-cmp'})
   use({'hrsh7th/cmp-nvim-lsp'})

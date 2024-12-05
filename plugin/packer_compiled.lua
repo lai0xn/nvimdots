@@ -84,6 +84,16 @@ _G.packer_plugins = {
     path = "/home/lain/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["dressing.nvim"] = {
+    loaded = true,
+    path = "/home/lain/.local/share/nvim/site/pack/packer/start/dressing.nvim",
+    url = "https://github.com/stevearc/dressing.nvim"
+  },
+  ["flutter-tools.nvim"] = {
+    loaded = true,
+    path = "/home/lain/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
+    url = "https://github.com/nvim-flutter/flutter-tools.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/lain/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -93,6 +103,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lain/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
+  ["kanagawa-paper.nvim"] = {
+    loaded = true,
+    path = "/home/lain/.local/share/nvim/site/pack/packer/start/kanagawa-paper.nvim",
+    url = "https://github.com/sho-87/kanagawa-paper.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -108,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lain/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
+  neoformat = {
+    loaded = true,
+    path = "/home/lain/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -144,6 +164,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lain/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["presence.nvim"] = {
+    loaded = true,
+    path = "/home/lain/.local/share/nvim/site/pack/packer/start/presence.nvim",
+    url = "https://github.com/andweeb/presence.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
