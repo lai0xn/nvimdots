@@ -25,9 +25,11 @@ require("gruvbox").setup({
   transparent_mode = false,
 })
 
+vim.api.nvim_set_hl(0, "VertSplit", { fg = "#00FF00", bg = "NONE" })
+
 --set line numbers
 vim.cmd("set number")
 -- enable ts
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme poimandres")
 vim.o.background = dark
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[hi WinSeparator guifg=#506477]])

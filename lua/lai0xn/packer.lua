@@ -11,7 +11,20 @@ return require('packer').startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
-  use { 'sbdchd/neoformat'}
+use { 
+  'olivercederborg/poimandres.nvim',
+  config = function()
+    require('poimandres').setup {
+      -- leave this setup function empty for default config
+      -- or refer to the configuration section
+      -- for configuration options
+    }
+  end
+}
+use({
+    "stevearc/conform.nvim",
+  })
+  use 'Yazeed1s/oh-lucy.nvim'
   use {
   'L3MON4D3/LuaSnip',
   requires = 'rafamadriz/friendly-snippets', -- Optional: pre-defined snippets
