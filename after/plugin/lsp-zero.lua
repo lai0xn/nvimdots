@@ -14,7 +14,18 @@ require('lspconfig').lua_ls.setup({})
 require('lspconfig').gopls.setup({})
 require('lspconfig').ts_ls.setup({})
 require('lspconfig').zls.setup({})
-require('lspconfig').vuels.setup({})
+require("lspconfig").volar.setup({
+filetypes = { "vue", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+init_options = {
+vue = {
+hybridMode = false,
+},
+typescript = {
+tsdk = vim.fn.getcwd() .. "/node_modules/typescript/lib",
+},
+},
+}) 
+
 -- This is where you enable features that only work
 -- if there is a language server active in the file
 vim.api.nvim_create_autocmd('LspAttach', {
