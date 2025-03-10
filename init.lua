@@ -1,16 +1,19 @@
 require("lai0xn")
 -- Default options:
 require("gruvbox").setup({
+  palette_overrides = {
+		bright_orange = "#ebdbb2"
+	},
   terminal_colors = true, -- add neovim terminal colors
   undercurl = true,
   underline = true,
-  bold = true,
+  bold = false,
   italic = {
-    strings = true,
-    emphasis = true,
-    comments = true,
+    strings = false,
+    emphasis = false,
+    comments = false,
     operators = false,
-    folds = true,
+    folds = false,
   },
   strikethrough = true,
   invert_selection = false,
@@ -18,18 +21,14 @@ require("gruvbox").setup({
   invert_tabline = false,
   invert_intend_guides = false,
   inverse = true, -- invert background for search, diffs, statuslines and errors
-  contrast = "hard", -- can be "hard", "soft" or empty string
-  palette_overrides = {},
-  overrides = {},
+  contrast = "hard",
   dim_inactive = false,
   transparent_mode = false,
 })
 
-vim.api.nvim_set_hl(0, "VertSplit", { fg = "#00FF00", bg = "NONE" })
-
+vim.g.gruvbox_baby_background_color = "dark"
 --set line numbers
 vim.cmd("set number")
 -- enable ts
-vim.cmd("colorscheme poimandres")
+vim.cmd("colorscheme gruvbox")
 vim.o.background = dark
-vim.cmd([[hi WinSeparator guifg=#506477]])

@@ -33,6 +33,6 @@ vim.keymap.set("n", "<leader>h", function()
 end, { desc = "Toggle horizontal terminal" })
 
 vim.keymap.set("n", "<leader>v", function()
-  vertical:toggle()
+  vim.cmd("ToggleTerm size=80 direction=vertical")
 end, { desc = "Toggle vertical terminal" })
 

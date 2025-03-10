@@ -1,0 +1,2 @@
+
+vim.cmd([[hi WinSeparator guifg=#506477]])
